@@ -40,7 +40,8 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "jsx-quotes": 1
+    "jsx-quotes": 1,
+    "import/no-extraneous-dependencies": 0
   },
   "root": true
 }
