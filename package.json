@@ -8,18 +8,16 @@
     "start": "next start",
     "lint": "next lint",
     "lint-staged": "lint-staged",
-    "test": "vitest",
+    "test": "vitest run",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo ",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx}": [
+    "./**/*.{js, jsx, ts,tsx}": [
+      "npm run test",
       "eslint",
       "prettier --write",
       "npm run type-check"
-    ],
-    "__tests__/**/*.{test,spec}.{js, jsx, ts, tsx}": [
-      "npm run test"
     ]
   },
   "dependencies": {
