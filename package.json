@@ -13,10 +13,11 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "./**/*.{js, jsx, ts,tsx}": [
+    "**/*.{js, jsx, ts,tsx}": [
       "eslint",
       "prettier --write",
-      "npm run type-check"
+      "npm run type-check",
+      "sadadsa"
     ]
   },
   "dependencies": {
