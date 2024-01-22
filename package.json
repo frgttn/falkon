@@ -18,7 +18,7 @@
       "prettier --write",
       "npm run type-check"
     ],
-    "**/*.{test,spec}.?(c|m)[jt]s?(x)": [
+    "__tests__/**/*.{test,spec}.{js, jsx, ts, tsx}": [
       "npm run test"
     ]
   },
